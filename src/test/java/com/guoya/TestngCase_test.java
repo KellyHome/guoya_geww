@@ -21,7 +21,7 @@ public class TestngCase_test {
 				"D:/myself/programfile/selenium/chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.setBinary(new File("C:/Users/戈维维/AppData/Local/Google/Chrome/Application/chrome.exe"));;
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(options);
 		driver.get("http://127.0.0.1:8081/guoya_geww/MyHtml.html");
 		Thread.sleep(2000);
 	}
