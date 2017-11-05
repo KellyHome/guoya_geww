@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6663" started-at="2017-11-05T09:37:36Z" finished-at="2017-11-05T09:37:43Z">
+  <suite name="TestAll" duration-ms="6873" started-at="2017-11-05T09:51:39Z" finished-at="2017-11-05T09:51:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6663" started-at="2017-11-05T09:37:36Z" finished-at="2017-11-05T09:37:43Z">
+    <test name="case1" duration-ms="6873" started-at="2017-11-05T09:51:39Z" finished-at="2017-11-05T09:51:46Z">
       <class name="com.guoya.TestngCase_test">
-        <test-method status="PASS" signature="openChrome()[pri:0, instance:com.guoya.TestngCase_test@5c71b273]" name="openChrome" is-config="true" duration-ms="5428" started-at="2017-11-05T17:37:36Z" finished-at="2017-11-05T17:37:41Z">
+        <test-method status="PASS" signature="openChrome()[pri:0, instance:com.guoya.TestngCase_test@62b9f149]" name="openChrome" is-config="true" duration-ms="5691" started-at="2017-11-05T17:51:39Z" finished-at="2017-11-05T17:51:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openChrome -->
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.guoya.TestngCase_test@5c71b273]" name="testLogin" duration-ms="16" started-at="2017-11-05T17:37:41Z" finished-at="2017-11-05T17:37:41Z">
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:com.guoya.TestngCase_test@62b9f149]" name="testLogin" duration-ms="15" started-at="2017-11-05T17:51:45Z" finished-at="2017-11-05T17:51:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="quitChrome()[pri:0, instance:com.guoya.TestngCase_test@5c71b273]" name="quitChrome" is-config="true" duration-ms="1219" started-at="2017-11-05T17:37:41Z" finished-at="2017-11-05T17:37:43Z">
+        <test-method status="PASS" signature="quitChrome()[pri:0, instance:com.guoya.TestngCase_test@62b9f149]" name="quitChrome" is-config="true" duration-ms="1151" started-at="2017-11-05T17:51:45Z" finished-at="2017-11-05T17:51:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitChrome -->
       </class> <!-- com.guoya.TestngCase_test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- case1 -->
+  </suite> <!-- TestAll -->
 </testng-results>
