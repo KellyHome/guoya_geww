@@ -41,7 +41,7 @@ public class test_selenium {
 			e.printStackTrace();
 		}
 
-		boolean result = driver.getPageSource().contains("吴令");
+		boolean result = driver.getPageSource().contains("SUCCESS");
 
 		Assert.assertEquals(true, result);
 		driver.quit();

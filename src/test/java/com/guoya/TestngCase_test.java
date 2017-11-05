@@ -1,5 +1,6 @@
 package com.guoya;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,33 +30,28 @@ public class TestngCase_test {
 	public void testLogin() {
 		WebElement username = driver.findElement(By.name("username"));
 		username.clear();
-		username.sendKeys("guoyasoft");
-	}
+		username.sendKeys("username");
 
-	@Test
-	public void testPassword() {
-		WebElement password = driver.findElement(By.name("password"));
+		WebElement password = driver.findElement(By.id("password"));
 		password.clear();
-		password.sendKeys("123456");
-	}
+		password.sendKeys("12345678");
 
-	@Test
-	public void testSubmit() throws InterruptedException {
 		WebElement submit = driver.findElement(By
 				.xpath("//input[@type='submit']"));
 		submit.click();
-		Thread.sleep(2000);
-	}
 
-	@Test
-	public void testResult() {
-		String result = driver.getPageSource();
-		boolean isSuccess = true;
-
-		if (result.contains("success")) {
-
-			System.out.println(isSuccess);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+
+		boolean result = driver.getPageSource().contains("SUCCESS");
+
+		Assert.assertEquals(true, result);
+		driver.quit();
+
 	}
 
 }
