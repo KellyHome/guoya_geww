@@ -5,7 +5,9 @@
 	<test name="case1">
 		<classes>
 			<class name="com.guoya.TestngCase_test" />
+		<!--  
 			<class name="com.guoyasoft.testcase_selenium" />
+		-->
 		</classes>
 	</test>
 </suite>
