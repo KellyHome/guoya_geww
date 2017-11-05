@@ -17,7 +17,7 @@ public class TestngCase_test {
 		System.setProperty("webdriver.chrome.driver",
 				"D:/myself/programfile/selenium/chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get("http://127.0.0.1:8080/guoya_geww/MyHtml.html");
+		driver.get("http://127.0.0.1:8081/guoya_geww/MyHtml.html");
 		Thread.sleep(2000);
 	}
 
@@ -64,7 +64,6 @@ public class TestngCase_test {
 		boolean result = driver.getPageSource().contains("SUCCESS");
 
 		Assert.assertEquals(true, result);
-		driver.quit();
 
 	}
 
