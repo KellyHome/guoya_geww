@@ -1,10 +1,13 @@
 package com.guoya;
 
+import java.io.File;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
@@ -16,6 +19,8 @@ public class TestngCase_test {
 	public void openChrome() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver",
 				"D:/myself/programfile/selenium/chromedriver.exe");
+		ChromeOptions options = new ChromeOptions();
+		options.setBinary(new File("C:/Users/戈维维/AppData/Local/Google/Chrome/Application/chrome.exe"));;
 		driver = new ChromeDriver();
 		driver.get("http://127.0.0.1:8081/guoya_geww/MyHtml.html");
 		Thread.sleep(2000);
