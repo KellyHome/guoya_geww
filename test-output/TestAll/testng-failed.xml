@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [TestAll]">
-  <test name="case2(failed)">
+  <test name="case1(failed)">
     <classes>
       <class name="com.guoya.TestngCase_test">
         <methods>
           <include name="quitChrome"/>
           <include name="testLogin"/>
           <include name="openChrome"/>
-          <include name="testPassword"/>
-          <include name="testSubmit"/>
         </methods>
       </class> <!-- com.guoya.TestngCase_test -->
     </classes>
-  </test> <!-- case2(failed) -->
+  </test> <!-- case1(failed) -->
 </suite> <!-- Failed suite [TestAll] -->

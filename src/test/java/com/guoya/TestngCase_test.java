@@ -31,10 +31,24 @@ public class TestngCase_test {
 		WebElement username = driver.findElement(By.name("username"));
 		username.clear();
 		username.sendKeys("username");
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 
 		WebElement password = driver.findElement(By.id("password"));
 		password.clear();
 		password.sendKeys("12345678");
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 
 		WebElement submit = driver.findElement(By
 				.xpath("//input[@type='submit']"));
